@@ -45,7 +45,7 @@ def main():
         for asteriod in asteroids:
             for shot in shots:
                 if asteriod.collision(shot):
-                    asteriod.kill()
+                    asteriod.split()
                     shot.kill()
         pygame.display.flip()
         dt = Clock.tick(60)/1000
